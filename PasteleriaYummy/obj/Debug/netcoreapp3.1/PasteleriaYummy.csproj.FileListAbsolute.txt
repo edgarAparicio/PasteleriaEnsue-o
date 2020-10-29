@@ -58,3 +58,6 @@ C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\Pastele
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\PasteleriaYummy.csproj.CoreCompileInputs.cache
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\PasteleriaYummy.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\Razor\Views\Pastel\Detalles.cshtml.g.cs
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TarjetaPastelPartialView.cshtml.g.cs
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ImagenesDesplazantesPartialView.cshtml.g.cs

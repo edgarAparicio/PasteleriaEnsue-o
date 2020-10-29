@@ -11,7 +11,8 @@ y aqui solo agregamos el modelo a recibir*@
 <h3>@Model.CategoriaActual</h3>
 @foreach (var pastel in Model.Pasteles)
 {
-    <div class="col-sm-4 col-lg-4 col-md-4">
+    @*Se pasa codigo a una partial view _TarjetaPastelPartialView
+        <div class="col-sm-4 col-lg-4 col-md-4">
         <div class="thumbnail">
             <img src="@pastel.ImagenThumbnailUrl" alt="">
             <div class="caption">
@@ -22,5 +23,8 @@ y aqui solo agregamos el modelo a recibir*@
                 <p>@pastel.DescripcionCorta</p>
             </div>
         </div>
-    </div>
+    </div>*@
+
+    <partial name="_TarjetaPastelPartialView" model="pastel" />
+
 }

@@ -33,6 +33,9 @@ namespace PasteleriaYummy
             //services.AddScoped<ICategoria, SimuladorRepositorioCategoria>();
             services.AddScoped<IPastel, DataPastel>();
             services.AddScoped<ICategoria, DataCategoria>();
+            services.AddScoped<DataCarritoCompras>(sp => DataCarritoCompras.MostrarCarrito(sp));
+            services.AddHttpContextAccessor();
+            services.AddSession();
 
             services.AddControllersWithViews();
         }
@@ -47,6 +50,7 @@ namespace PasteleriaYummy
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
             app.UseRouting();
 
             //app.UseEndpoints(endpoints =>
@@ -61,7 +65,7 @@ namespace PasteleriaYummy
             {
                 endpoints.MapControllerRoute( 
                     name: "default",
-                    pattern: "{controller=Pastel}/{action=MostrarListaPasteles}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
                 
             });
         }

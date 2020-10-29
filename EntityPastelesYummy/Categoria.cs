@@ -10,5 +10,7 @@ namespace EdgarAparicio.PastelesYummy.Business.Entity
         public string CategoriaNombre { get; set; }
         public string Descripcion { get; set; }
         public List<Pastel> Pasteles { get; set; }
+
+
     }
 }

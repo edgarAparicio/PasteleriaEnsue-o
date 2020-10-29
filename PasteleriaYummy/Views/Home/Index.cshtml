@@ -1,0 +1,13 @@
+﻿@model HomeViewModel
+
+<partial name="_ImagenesDesplazantesPartialView" />
+
+<h2>Pasteles de la semana</h2>
+<h4>Nuestra seleccion semanal - justo para ti!</h4>
+
+<div>
+    @foreach (var pastel in Model.PastelesSemana)
+    {
+        <partial name="_TarjetaPastelPartialView" model="pastel"/>
+    }
+</div>

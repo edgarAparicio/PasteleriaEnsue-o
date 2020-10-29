@@ -16,6 +16,8 @@ namespace EdgarAparicio.PastelesYummy.Data
         public DbSet<Pastel> Pasteles { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
 
+        public DbSet<ArticuloCarritoCompras> ArticulosCarritoCompras { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

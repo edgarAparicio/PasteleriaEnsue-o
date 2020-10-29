@@ -6,3 +6,4 @@ C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityP
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityPastelesYummy\obj\Debug\netcoreapp3.1\EntityPastelesYummy.csproj.CoreCompileInputs.cache
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityPastelesYummy\obj\Debug\netcoreapp3.1\EntityPastelesYummy.dll
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityPastelesYummy\obj\Debug\netcoreapp3.1\EntityPastelesYummy.pdb
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityPastelesYummy\obj\Debug\netcoreapp3.1\EntityPastelesYummy.csprojAssemblyReference.cache
