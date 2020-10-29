@@ -1,0 +1,16 @@
+﻿@*Ya se agrego la referencia en _viewImports*@
+@model Pastel
+
+<h2>@Model.Nombre</h2>
+
+<div class="thumbnail">
+    <img alt="@Model.Nombre" src="@Model.ImagenUrl">
+    <div class="caption-full">
+        <h3 class="pull-right">@Model.Precio</h3>
+        <h3>
+            <a href="#">@Model.Nombre</a>
+        </h3>
+        <h4>@Model.DescripcionCorta</h4>
+        <p>@Model.DescripcionLarga</p>
+    </div>
+</div>

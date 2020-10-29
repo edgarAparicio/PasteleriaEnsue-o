@@ -34,8 +34,14 @@ namespace PasteleriaYummy.Controllers
             listaPastelesViewModel.Pasteles = pastelRepositorio.ObtenerListaPasteles;
             listaPastelesViewModel.CategoriaActual = "Pasteles de Queso";
             return View(listaPastelesViewModel);
+        }
 
-
+        public IActionResult Detalles(int id)
+        {
+            var pastel = pastelRepositorio.ObtenerPastelPorId(id);
+            if (pastel == null)
+                return NotFound();
+            return View(pastel);
         }
     }
 }

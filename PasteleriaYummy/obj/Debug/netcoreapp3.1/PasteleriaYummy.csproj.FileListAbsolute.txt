@@ -57,3 +57,4 @@ C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\Pastele
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\PasteleriaYummy.csproj.CoreCompileInputs.cache
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\PasteleriaYummy.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\Razor\Views\Pastel\Detalles.cshtml.g.cs

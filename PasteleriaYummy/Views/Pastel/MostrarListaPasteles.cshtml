@@ -17,7 +17,7 @@ y aqui solo agregamos el modelo a recibir*@
             <div class="caption">
                 <h3 class="pull-right">@pastel.Precio.ToString("c")</h3>
                 <h3>
-                    <a>@pastel.Nombre</a>
+                    <a asp-controller="Pastel" asp-action="Detalles" asp-route-id="@pastel.PastelId">@pastel.Nombre</a>
                 </h3>
                 <p>@pastel.DescripcionCorta</p>
             </div>
