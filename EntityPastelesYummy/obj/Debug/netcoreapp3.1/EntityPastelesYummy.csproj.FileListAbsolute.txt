@@ -1,7 +1,6 @@
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityPastelesYummy\bin\Debug\netcoreapp3.1\EntityPastelesYummy.deps.json
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityPastelesYummy\bin\Debug\netcoreapp3.1\EntityPastelesYummy.dll
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityPastelesYummy\bin\Debug\netcoreapp3.1\EntityPastelesYummy.pdb
-C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityPastelesYummy\obj\Debug\netcoreapp3.1\EntityPastelesYummy.csprojAssemblyReference.cache
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityPastelesYummy\obj\Debug\netcoreapp3.1\EntityPastelesYummy.AssemblyInfoInputs.cache
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityPastelesYummy\obj\Debug\netcoreapp3.1\EntityPastelesYummy.AssemblyInfo.cs
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\EntityPastelesYummy\obj\Debug\netcoreapp3.1\EntityPastelesYummy.csproj.CoreCompileInputs.cache

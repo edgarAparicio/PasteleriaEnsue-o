@@ -1,4 +1,6 @@
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\bin\Debug\netcoreapp3.1\DataPastelesYummy.deps.json
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\bin\Debug\netcoreapp3.1\DataPastelesYummy.runtimeconfig.json
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\bin\Debug\netcoreapp3.1\DataPastelesYummy.runtimeconfig.dev.json
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\bin\Debug\netcoreapp3.1\DataPastelesYummy.dll
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\bin\Debug\netcoreapp3.1\DataPastelesYummy.pdb
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\bin\Debug\netcoreapp3.1\EntityPastelesYummy.dll
@@ -10,3 +12,4 @@ C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPas
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\obj\Debug\netcoreapp3.1\DataPastelesYummy.csproj.CopyComplete
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\obj\Debug\netcoreapp3.1\DataPastelesYummy.dll
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\obj\Debug\netcoreapp3.1\DataPastelesYummy.pdb
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\obj\Debug\netcoreapp3.1\DataPastelesYummy.genruntimeconfig.cache

@@ -6,6 +6,8 @@ using EdgarAparicio.PastelesYummy.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -13,12 +15,25 @@ namespace PasteleriaYummy
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IPastel, SimuladorRepositorioPastel>();
-            services.AddScoped<ICategoria, SimuladorRepositorioCategoria>();
+            services.AddDbContext<DbContextPasteleriaYummy>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            //Como ya se tiene una bd real ahora se agregan las clases que afectan a la BD
+            //services.AddScoped<IPastel, SimuladorRepositorioPastel>();
+            //services.AddScoped<ICategoria, SimuladorRepositorioCategoria>();
+            services.AddScoped<IPastel, DataPastel>();
+            services.AddScoped<ICategoria, DataCategoria>();
+
             services.AddControllersWithViews();
         }
 
@@ -46,7 +61,7 @@ namespace PasteleriaYummy
             {
                 endpoints.MapControllerRoute( 
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Pastel}/{action=MostrarListaPasteles}/{id?}");
                 
             });
         }
