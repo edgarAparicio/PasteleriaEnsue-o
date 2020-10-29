@@ -1,0 +1,26 @@
+﻿@*@model IEnumerable<EdgarAparicio.PastelesYummy.Business.Entity.Pastel>*@
+@*Para ya no recibir un Ienumerable de pasteles, ahora se recibe un viewModel llamado ListaPastelesViewModel *@
+
+@*@model EdgarAparicio.PastelesYummy.Business.Entity.ViewModels.ListaPastelesViewModels*@
+
+@*Y para no agregar tod ala referencia desde EgarAparicio.Pasteles..... se agrego una vista de importaciones en donde se agrega la referencia
+y aqui solo agregamos el modelo a recibir*@
+@model ListaPastelesViewModels
+
+
+<h3>@Model.CategoriaActual</h3>
+@foreach (var pastel in Model.Pasteles)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="@pastel.ImagenThumbnailUrl" alt="">
+            <div class="caption">
+                <h3 class="pull-right">@pastel.Precio.ToString("c")</h3>
+                <h3>
+                    <a>@pastel.Nombre</a>
+                </h3>
+                <p>@pastel.DescripcionCorta</p>
+            </div>
+        </div>
+    </div>
+}

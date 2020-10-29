@@ -1,0 +1,12 @@
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\bin\Debug\netcoreapp3.1\DataPastelesYummy.deps.json
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\bin\Debug\netcoreapp3.1\DataPastelesYummy.dll
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\bin\Debug\netcoreapp3.1\DataPastelesYummy.pdb
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\bin\Debug\netcoreapp3.1\EntityPastelesYummy.dll
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\bin\Debug\netcoreapp3.1\EntityPastelesYummy.pdb
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\obj\Debug\netcoreapp3.1\DataPastelesYummy.csprojAssemblyReference.cache
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\obj\Debug\netcoreapp3.1\DataPastelesYummy.AssemblyInfoInputs.cache
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\obj\Debug\netcoreapp3.1\DataPastelesYummy.AssemblyInfo.cs
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\obj\Debug\netcoreapp3.1\DataPastelesYummy.csproj.CoreCompileInputs.cache
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\obj\Debug\netcoreapp3.1\DataPastelesYummy.csproj.CopyComplete
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\obj\Debug\netcoreapp3.1\DataPastelesYummy.dll
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\DataPastelesYummy\obj\Debug\netcoreapp3.1\DataPastelesYummy.pdb

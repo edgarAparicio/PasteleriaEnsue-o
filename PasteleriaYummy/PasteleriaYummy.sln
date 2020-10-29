@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasteleriaYummy", "PasteleriaYummy.csproj", "{6B0D41DD-F61F-44EF-98D4-DF923D472C94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. UI", "1. UI", "{F6B5D7B7-0921-4BF8-932D-82A0AA76C23A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Business", "2. Business", "{EAA46BBD-6448-4114-A315-1DDB2B1CFDB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Data", "3. Data", "{4096456E-8DC6-4591-B6EE-F21D2BC0337F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPastelesYummy", "..\DataPastelesYummy\DataPastelesYummy.csproj", "{E4C5202C-FCB1-4D06-BD91-B939A2300C3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityPastelesYummy", "..\EntityPastelesYummy\EntityPastelesYummy.csproj", "{8F15D328-6DDB-4317-AA5D-F0A804496A42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B0D41DD-F61F-44EF-98D4-DF923D472C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0D41DD-F61F-44EF-98D4-DF923D472C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0D41DD-F61F-44EF-98D4-DF923D472C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0D41DD-F61F-44EF-98D4-DF923D472C94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C5202C-FCB1-4D06-BD91-B939A2300C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C5202C-FCB1-4D06-BD91-B939A2300C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C5202C-FCB1-4D06-BD91-B939A2300C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C5202C-FCB1-4D06-BD91-B939A2300C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F15D328-6DDB-4317-AA5D-F0A804496A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F15D328-6DDB-4317-AA5D-F0A804496A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F15D328-6DDB-4317-AA5D-F0A804496A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F15D328-6DDB-4317-AA5D-F0A804496A42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B0D41DD-F61F-44EF-98D4-DF923D472C94} = {F6B5D7B7-0921-4BF8-932D-82A0AA76C23A}
+		{E4C5202C-FCB1-4D06-BD91-B939A2300C3F} = {4096456E-8DC6-4591-B6EE-F21D2BC0337F}
+		{8F15D328-6DDB-4317-AA5D-F0A804496A42} = {EAA46BBD-6448-4114-A315-1DDB2B1CFDB9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5201F461-C641-4A3D-A89E-84435B3DE7E7}
+	EndGlobalSection
+EndGlobal
