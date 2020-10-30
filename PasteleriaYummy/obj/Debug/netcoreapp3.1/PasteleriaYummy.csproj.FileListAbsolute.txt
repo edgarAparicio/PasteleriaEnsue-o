@@ -65,3 +65,9 @@ C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\Pastele
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\ResumenTotalCarritoCompras\Default.cshtml.g.cs
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CategoriaPastelMenu\Default.cshtml.g.cs
 C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\Razor\Views\Contacto\Index.cshtml.g.cs
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\PasteleriaYummy.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\Razor\Views\Pedido\Checkout.cshtml.g.cs
+C:\Users\edgar\Google Drive\Applications Development\Git\PasteleriaYummy\PasteleriaYummy\obj\Debug\netcoreapp3.1\Razor\Views\Pedido\CheckoutCompleto.cshtml.g.cs

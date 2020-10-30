@@ -77,6 +77,34 @@ namespace EdgarAparicio.PastelesYummy.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("EdgarAparicio.PastelesYummy.Business.Entity.DetallePedido", b =>
+                {
+                    b.Property<int>("DetallePedidoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PastelId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PedidoId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("DetallePedidoId");
+
+                    b.HasIndex("PastelId");
+
+                    b.HasIndex("PedidoId");
+
+                    b.ToTable("DetallePedidos");
+                });
+
             modelBuilder.Entity("EdgarAparicio.PastelesYummy.Business.Entity.Pastel", b =>
                 {
                     b.Property<int>("PastelId")
@@ -277,11 +305,92 @@ namespace EdgarAparicio.PastelesYummy.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("EdgarAparicio.PastelesYummy.Business.Entity.Pedido", b =>
+                {
+                    b.Property<int>("PedidoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Apellido")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Ciudad")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("CodigoPostal")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("Direccion1")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<string>("Direccion2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("NumeroCelular")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("Pais")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("PedidoEntregado")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("PedidoTotal")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("PrimerNombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.HasKey("PedidoId");
+
+                    b.ToTable("Pedidos");
+                });
+
             modelBuilder.Entity("EdgarAparicio.PastelesYummy.Business.Entity.ArticuloCarritoCompras", b =>
                 {
                     b.HasOne("EdgarAparicio.PastelesYummy.Business.Entity.Pastel", "Pastel")
                         .WithMany()
                         .HasForeignKey("PastelId");
+                });
+
+            modelBuilder.Entity("EdgarAparicio.PastelesYummy.Business.Entity.DetallePedido", b =>
+                {
+                    b.HasOne("EdgarAparicio.PastelesYummy.Business.Entity.Pastel", "Pastel")
+                        .WithMany()
+                        .HasForeignKey("PastelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EdgarAparicio.PastelesYummy.Business.Entity.Pedido", "Pedido")
+                        .WithMany("DetallePedido")
+                        .HasForeignKey("PedidoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("EdgarAparicio.PastelesYummy.Business.Entity.Pastel", b =>

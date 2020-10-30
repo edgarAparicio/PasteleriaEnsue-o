@@ -33,6 +33,7 @@ namespace PasteleriaYummy
             //services.AddScoped<ICategoria, SimuladorRepositorioCategoria>();
             services.AddScoped<IPastel, DataPastel>();
             services.AddScoped<ICategoria, DataCategoria>();
+            services.AddScoped<IPedido, DataPedido>();
             services.AddScoped<DataCarritoCompras>(sp => DataCarritoCompras.MostrarCarrito(sp));
             services.AddHttpContextAccessor();
             services.AddSession();

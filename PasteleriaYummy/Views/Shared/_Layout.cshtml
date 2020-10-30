@@ -27,9 +27,9 @@
                         <li><a asp-controller="Home" asp-action="Index">Inicio</a></li>
                         @*<li><a asp-controller="Pastel" asp-action="MostrarListaPasteles">Todos los Pasteles</a></li>*@
                         @await Component.InvokeAsync("CategoriaPastelMenu")
-
-                        @await Component.InvokeAsync("ResumenTotalCarritoCompras")
                         <li><a asp-controller="Contacto" asp-action="Index">Contacto</a></li>
+                        @await Component.InvokeAsync("ResumenTotalCarritoCompras")
+
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,95 @@
+﻿@model Pedido
+
+<form asp-action="Checkout" method="post" class="form-horizontal" role="form">
+    <h4>Estás a solo un paso de tus deliciosos pasteles.</h4>
+
+    @*<div asp-validation-summary="All" class="text-danger"></div>*@
+
+
+    <div class="form-group">
+        <label asp-for="PrimerNombre" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="PrimerNombre" class="form-control" />
+            <span asp-validation-for="PrimerNombre" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Apellido" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Apellido" class="form-control" />
+            <span asp-validation-for="Apellido" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Direccion1" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Direccion1" class="form-control" />
+            <span asp-validation-for="Direccion1" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Direccion2" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Direccion2" class="form-control" />
+            <span asp-validation-for="Direccion2" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CodigoPostal" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="CodigoPostal" class="form-control" />
+            <span asp-validation-for="CodigoPostal" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Ciudad" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Ciudad" class="form-control" />
+            <span asp-validation-for="Ciudad" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Estado" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Estado" class="form-control" />
+            <span asp-validation-for="Estado" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Pais" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Pais" class="form-control" />
+            <span asp-validation-for="Pais" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NumeroCelular" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="NumeroCelular" class="form-control" />
+            <span asp-validation-for="NumeroCelular" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-5">
+            <input type="submit" class="btn btn-primary" value="Completar Pedido" />
+        </div>
+    </div>
+
+</form>
