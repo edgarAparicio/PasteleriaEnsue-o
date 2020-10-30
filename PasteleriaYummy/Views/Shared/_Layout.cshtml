@@ -24,8 +24,12 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a asp-controller="Home" asp-action="Index">Bienvenido</a></li>
-                        <li><a asp-controller="Pastel" asp-action="MostrarListaPasteles">Pasteles</a></li>
+                        <li><a asp-controller="Home" asp-action="Index">Inicio</a></li>
+                        @*<li><a asp-controller="Pastel" asp-action="MostrarListaPasteles">Todos los Pasteles</a></li>*@
+                        @await Component.InvokeAsync("CategoriaPastelMenu")
+
+                        @await Component.InvokeAsync("ResumenTotalCarritoCompras")
+                        <li><a asp-controller="Contacto" asp-action="Index">Contacto</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,37 @@
+﻿@model PasteleriaYummy.ViewModels.CarritoComprasViewModel
+
+<h2>Tu carrito de compras</h2>
+<h4>Aqui tienes tus deliciosos pasteles en tu carrito de compras</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Cantidad seleccionada</th>
+            <th>Pastel</th>
+            <th class="text-right">Precio</th>
+            <th class="text-right">Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var linea in Model.DataCarritoCompras.ListaArticulosCarritoCompras)
+        {
+            <tr>
+                <td class="text-center">@linea.Cantidad</td>
+                <td class="text-left">@linea.Pastel.Nombre</td>
+                <td class="text-right">@linea.Pastel.Precio.ToString("c")</td>
+                <td class="text-right">
+                    @((linea.Cantidad * linea.Pastel.Precio).ToString("c"))
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="text-right">Total:</td>
+            <td class="text-right">
+                @Model.TotalCarritoCompras.ToString("c")
+            </td>
+        </tr>
+    </tfoot>
+
+</table>

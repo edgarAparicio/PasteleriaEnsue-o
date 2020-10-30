@@ -12,5 +12,13 @@
         </h3>
         <h4>@Model.DescripcionCorta</h4>
         <p>@Model.DescripcionLarga</p>
+        <div class="addToCart">
+            <p class="button">
+                <a class="btn btn-primary"
+                   asp-controller="CarritoCompras"
+                   asp-action="AgregarArticuloCarritoCompras"
+                   asp-route-idPastel="@Model.PastelId">Agregar al carrito</a>
+            </p>
+        </div>
     </div>
 </div>
