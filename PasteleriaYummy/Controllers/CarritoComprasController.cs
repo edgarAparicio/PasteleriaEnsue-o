@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using EdgarAparicio.PastelesYummy.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PasteleriaYummy.ViewModels;
 
 namespace PasteleriaYummy.Controllers
 {
+    [Authorize]
     public class CarritoComprasController : Controller
     {
         private readonly IPastel pastelRepositorio;

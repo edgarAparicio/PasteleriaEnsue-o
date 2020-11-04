@@ -6,6 +6,7 @@ using EdgarAparicio.PastelesYummy.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -31,6 +32,8 @@ namespace PasteleriaYummy
             //Como ya se tiene una bd real ahora se agregan las clases que afectan a la BD
             //services.AddScoped<IPastel, SimuladorRepositorioPastel>();
             //services.AddScoped<ICategoria, SimuladorRepositorioCategoria>();
+
+            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<DbContextPasteleriaYummy>();
             services.AddScoped<IPastel, DataPastel>();
             services.AddScoped<ICategoria, DataCategoria>();
             services.AddScoped<IPedido, DataPedido>();
@@ -39,6 +42,7 @@ namespace PasteleriaYummy
             services.AddSession();
 
             services.AddControllersWithViews();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +57,8 @@ namespace PasteleriaYummy
             app.UseStaticFiles();
             app.UseSession();
             app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             //app.UseEndpoints(endpoints =>
             //{
@@ -67,6 +73,7 @@ namespace PasteleriaYummy
                 endpoints.MapControllerRoute( 
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
                 
             });
         }

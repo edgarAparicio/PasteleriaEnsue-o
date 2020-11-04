@@ -1,4 +1,6 @@
 ﻿using EdgarAparicio.PastelesYummy.Business.Entity;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,7 +8,7 @@ using System.Text;
 
 namespace EdgarAparicio.PastelesYummy.Data
 {
-    public class DbContextPasteleriaYummy : DbContext
+    public class DbContextPasteleriaYummy : IdentityDbContext<IdentityUser>
     {
         public DbContextPasteleriaYummy(DbContextOptions<DbContextPasteleriaYummy> options) : base(options)
         {
